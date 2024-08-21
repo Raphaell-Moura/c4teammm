@@ -1,0 +1,385 @@
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&display=swap');
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body, html {
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+/* HEADER DA MINHA PAGINA */
+
+header {
+    background-color: rgb(38, 38, 38);
+    display: flex;
+    align-items: center;
+    width: 100%;
+ 
+}
+
+
+
+.cabecalho {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 8px;
+    position: fixed;
+    background: transparent;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    z-index: 1000;
+}
+
+.cabecalho.scrolled {
+    background-color: rgb(38, 38, 38);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+
+
+.logo{
+    display: flex;
+    width: 96px;
+    height: auto;
+    margin-right: 390px;
+}
+
+
+
+
+
+.conteudo-informativo {
+    background-image: url(/src/images/rackkk.gif);
+    
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-blend-mode: overlay;
+    background-color: #6d6666;
+    
+   
+}
+
+.conteudo-informativo {
+    position: relative;
+}
+
+.conteudo-informativo .conteudo {
+    display: flex;
+    align-items: center;
+    padding: 0 10%;
+    height: 83vh;
+    width: 100%;
+}
+
+.conteudo-informativo .conteudo .informacoes {
+    width: 100%;
+}
+
+.conteudo-informativo .conteudo .informacoes {
+    margin-bottom: 30px;
+    width: 100%;
+}
+
+
+
+.conteudo-informativo .imagem {
+    width: 38%;
+    border: 12px 20px 4px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-blend-mode: overlay;
+    
+    
+}
+
+.conteudo-informativo .conteudo .informacoes .titulo {
+    font-family: "hind siliguri", sans-serif;
+    font-weight: 700;
+    color: #fff;
+    font-size: 60px;
+    margin-bottom: 10px;
+    
+
+}
+
+
+.conteudo-informativo .conteudo .informacoes .texto {
+    font-family: "Varela Round", sans-serif;
+    font-size: 19px;
+    font-weight: 400;
+    font-style: italic;
+    color: ghostwhite;
+    text-shadow: 2px 2px 5px rgba(255, 0, 0, 1.1);
+    
+}
+
+.espacamento {
+   
+    width: 100%;
+    height: 52px;
+    background-color: rgb(120, 0, 0);
+    
+    
+}
+
+
+
+
+/* OQUE FAZEMOS */
+
+.conteudo-oque-fazemos {
+    display: flex;
+    width: 100%;
+    height: auto;
+    flex-direction: row;
+    /* background-color: rgb(250, 252, 255); */
+
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-blend-mode: overlay;
+    background-image: url(/src/images/9495652.png);
+    padding: 80px;
+    background-size: cover;
+    background-repeat: no-repeat;
+   
+
+   
+}
+
+.oque-fazemos-informacoes {
+    flex: 1;
+    padding-right: 30px;
+
+}
+
+.oque-fazemos-title{
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #ff7f2a;
+    font-family: "Varela Round", sans-serif;
+}
+
+.oque-fazemos-subtitulo{
+    font-size: 38px;
+    
+}
+
+.oque-fazemos-paragrafo {
+    font-size: 20px;
+    color: black;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    font-family: "Varela Round", sans-serif;
+    font-weight: 400;
+}
+
+.oque-fazemos-cards {
+    flex: 1;
+    display: grid;
+    flex-wrap: wrap;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+.cards {
+
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 10px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: all 0.2s ease;
+}
+
+.cards:hover{
+    background-color: rgb(120, 0, 0);
+    color: #fff;
+    transform: translateY(-5px);
+    font-family: "Varela Round", sans-serif;
+    font-weight: 500;
+}
+
+.image-cards {
+    width: 110px;
+    height: auto;
+    border-radius: 12px 20px 4px;
+}
+
+.paragrafo-cards {
+    font-family: "Varela Round", sans-serif;
+    font-weight: 500;
+    
+}
+
+/* SERVICES */
+
+.services .services-title {
+    text-align: center;
+    font-family: "Varela Round", sans-serif;
+    font-weight: 500;
+    font-size: 52px;
+    margin-bottom: 20px;
+    color: rgb(120, 0, 0);
+}
+
+
+
+
+
+
+.services-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+
+.services {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-blend-mode: overlay;
+    background-image: url(/src/images/v915-techi-056.jpg);
+    opacity: 0.95;
+}
+
+.service-item {
+    border-radius: 8px;
+    padding: 20px;
+    max-width: 1200px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: all 0.3s ease;
+    border-radius: 12px;
+    padding: 48px;
+    width: 350px;
+    height: 420px;
+    text-align: center;
+    justify-content: space-between;
+    padding: 48px 16px;
+    /* background-color: rgba(255, 1, 1, 0.841); */
+}
+
+.service-item:hover{
+    background-color: rgb(120, 0, 0);
+    color: #fff;
+    transform: translateY(-5px);
+    font-family: "Varela Round", sans-serif;
+    font-weight: 500;
+}
+
+.paragrafo-services{
+    font-family: "Varela Round", sans-serif;
+    font-weight: 400; 
+    font-size: 15px;
+    font-style: initial;
+    line-height: 21px;
+    
+}
+
+.image-services {
+    width: 197px;
+    height: auto;
+    border-radius: 50%;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #222;
+    color: #fff;
+}
+
+/* MEDIA QUERY */
+
+@media screen and (min-width:1400px) {
+    
+
+    div.services-container{
+       margin-left: 85px;
+        width: 1345px;
+        height: auto;
+    }
+}
+
+@media screen and (max-width:700px) {
+    
+
+    .conteudo-oque-fazemos {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 80px
+    }
+
+    .oque-fazemos-cards {
+       
+        
+        flex-direction: row;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .conteudo-informativo {
+        background-image: url(/src/images/rackkk.gif);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-blend-mode: overlay;
+        background-color: #6d6666;
+        
+       
+    }
+
+    .conteudo-oque-fazemos {
+       
+        background-image: url(/src/images/v915-techi-056.jpg);
+       
+       
+    }
+
+    .oque-fazemos-subtitulo{
+        font-size: 28px;
+        
+    }
+
+    .oque-fazemos-paragrafo {
+        font-size: 17px;
+        color: black;
+        margin-bottom: 20px;
+        margin-top: 10px;
+        font-family: "Varela Round", sans-serif;
+        font-weight: 400;
+    }
+
+    .conteudo-informativo .conteudo .informacoes .titulo {
+        font-family: "hind siliguri", sans-serif;
+        font-weight: 700;
+        line-height: 45px;
+        color: #fff;
+        font-size: 46px;
+        margin-top: 250px;
+        
+    
+    }
+    
+}

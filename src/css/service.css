@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&display=swap');
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body, html {
+    overflow-x: hidden;
+    background-image: url(/src/images/9496474.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-blend-mode: overlay;
+    
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+
+
+.cabecalho {
+    background-color: rgb(38, 38, 38);
+}
+
+.image-about-service img {
+    max-width: 90%;
+    border-radius: 30% 70% 70% 30% / 60% 40% 60% 40%;
+    height: auto;
+    border: 5px solid #ff7f2a;
+}
+
+.about-section {
+    margin-top: 50px;
+    padding: 50px 15px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.content-col, .image-col {
+    flex: 1 1 100%;
+    max-width: 100%;
+    margin-bottom: 30px;
+}
+
+.image-col img {
+    max-width: 100%;
+    height: auto;
+}
+
+.heading-container h2 {
+    font-size: 28px;
+    margin-bottom: 15px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.heading-container span {
+    color: #ff7f2a;
+}
+
+.paragrafo-media {
+    font-size: 16px;
+    line-height: 1.6;
+    color: white;
+    font-family: "Varela Round", sans-serif;
+    text-align: justify;
+}
+
+@media (min-width: 768px) {
+    .row {
+        flex-wrap: nowrap;
+    }
+
+    .content-col, .image-col {
+        flex: 1;
+        max-width: 50%;
+        margin-bottom: 0;
+    }
+
+    .heading-container h2 {
+        font-size: 36px;
+        text-align: left;
+    }
+
+    .paragrafo-media {
+        font-size: 18px;
+    }
+}
+
+div.containerr{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    background-image: url(/src/images/v915-techi-056.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+
+.portfolio-section {
+    display: flex;
+    flex: wrap;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    overflow: hidden;
+    color: #fff;
+}
+
+.portfolio-section h2 {
+    margin-bottom: 20px;
+    font-size: 28px;
+    font-weight: 700;
+    color: black;
+}
+.containerr h2{
+    text-align: center;
+    font-family: "Varela Round", sans-serif;
+    font-weight: 500;
+    font-size: 52px;
+    margin-bottom: 20px;
+    color: rgb(120, 0, 0);
+}
+
+
+.carrossel {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    
+}
+
+.carrossel-item {
+  
+    position: relative;
+    
+    
+}
+
+
+.carrossel-item img {
+    width: 432px;
+    height: auto;
+    border-radius: 30%;
+    border: 5px solid #ff7f2a;
+   
+}
+
+
+.overlay {
+    display: flex;
+    position: absolute;
+    top: 48px;
+    text-align: center;
+    align-items: center;
+    bottom: 10px;
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+    width: 100%;
+    border-radius: 30%;
+    transition: 0.5s ease;
+    opacity: 0;
+    color: white;
+    font-size: 20px;
+    
+    padding: 20px;
+}
+
+.overlay .text {
+    line-height: 26px;
+    color: #fdfdfd;
+    font-weight: 700;
+    
+}
+.carrossel-item:hover .overlay {
+    opacity: 1;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #222;
+    color: #fff;
+}
+
+.titulo-services{
+    color: #850b0b;
+    font-size: 25px;
+    margin-bottom: 15px;
+    font-weight: 400;
+    font-family: "Varela Round", sans-serif;
+   
+    
+}
+
+/* MEDIA QUERY */
+
+@media screen and (max-width:600px) {
+    .image-about-service img {
+        max-width: 140%;
+        
+    }
+
+    p {
+        font-size: 21px;
+        line-height: 1.6;
+        color: rgb(240, 240, 240);
+    }
+
+    .heading-container h2 {
+        font-size: 48px;
+        margin-bottom: 15px;
+        font-weight: 700;
+    }
+
+    div.containerr{
+        background-image: none;
+        padding-top: 50px 0;
+    }
+}
